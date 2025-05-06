@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tęczowy Front Równości</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #ec4899, #facc15, #6366f1);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    header p {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      animation: slideUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.2s; }
+    .card:nth-child(2) { animation-delay: 0.4s; }
+    .card:nth-child(3) { animation-delay: 0.6s; }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      background-color: white;
+      color: #ec4899;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #fef3f7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9em;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(40px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tęczowy Front Równości</h1>
+    <p>Walczymy o świat sprawiedliwości, równości i wolności dla każdego!</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Nasz Manifest</h2>
+      <p>
+        Tęczowy Front Równości powstał z potrzeby zmian. Wierzymy w bezwarunkową
+        równość, progresywną politykę społeczną i inkluzywne społeczeństwo. Naszym celem jest zbudowanie przyszłości bez opresji, wyzysku i nienawiści.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Nasz Zespół</h2>
+      <p>
+        Tworzymy społeczność aktywistów, artystów, nauczycieli i ludzi, którzy nie boją się mówić prawdy. Każdy głos ma znaczenie!
+      </p>
+    </div>
+
+    <div class="card" style="text-align: center;">
+      <h2>Dołącz do nas</h2>
+      <p style="margin-bottom: 20px;">
+        Zmieńmy świat razem! Wypełnij formularz kontaktowy lub dołącz do naszych wydarzeń lokalnych.
+      </p>
+      <button>Dołącz teraz</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Tęczowy Front Równości. Wszelkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
